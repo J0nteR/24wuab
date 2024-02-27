@@ -34,9 +34,26 @@ i.material-icons{
     display: inline;
 }
 
+.search-button{
+    cursor: pointer;
+    display: inline;
+}
+
 /* Slut element */
 
 /* JS Specific */
+.jSNav{
+    height: 100vh;
+    width: 80vw;
+    background: hotpink;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
 .fadeLayer{
     position: fixed;
     top: 0;
@@ -52,7 +69,7 @@ i.material-icons{
     left: 0;
 }
 
-.fade-layer.visible{
+.visible{
     display: block;
 }
 
@@ -61,17 +78,7 @@ i.material-icons{
 
 
 /* Alla sidor: */
-.JSNav{
-    height: 100vh;
-    width: 80vw;
-    background: hotpink;
-    position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
-}
+
 
 header{
     grid-area: head;

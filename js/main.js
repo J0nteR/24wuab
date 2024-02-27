@@ -1,11 +1,25 @@
-document.querySelector(".fade-layer").addEventListener("click", showMenu)
+document.querySelector(".fadeLayer").addEventListener("click", showMenu)
 
 document.querySelector(".menu-button").addEventListener("click", showMenu)
 
+
+/*
+function fade(){
+    alert('Du tryckte på fade');
+
+}
+*/
+
+function menu(){
+    alert('Du tryckte på menu');
+
+}
+
 function showMenu(){
-    let menu = document.querySelector("nav.menu")
+    console.log("funkar")
+    let menu = document.querySelector("nav.jSNav")
     menu.classList.toggle("show")  
     
-    let layer = document.querySelector(".fade-layer")
+    let layer = document.querySelector(".fadeLayer")
     layer.classList.toggle("visible")  
 }
