@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Out of Bounce</title>
+  <!-- GLÖM INTE DENNA PÅ ALLA SIDOR!!!: -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
-  <nav> <!-- ska komma fram mha JS-funktion -->
-    bollar, klubbor, handksar osv osv
+  <nav class="JSNav"> <!-- ska komma fram mha JS-funktion -->
+    <ul>
+      <li><a href="#">bollar</a></li>
+      <li><a href="#">klubbor</a></li>
+      <li><a href="#">handksar</a></li>
+      <li><a href="#">osv</a></li>
+      <li><a href="#">osv</a></li>
+    </ul>
   </nav>
 
+  <div class="fadeLayer"></div>
 
   <div id="start_wrapper">
-    <header>
-      Hamburgermeny, Logga, Sök
+    <header class="mobileHeader">
+      <div class="menu-button">
+        <i class="material-icons">menu</i>
+      </div>
+
+      <div class="logoDiv">
+        <img src="img/TempLogga.png" alt="Out of Bounce Logo">
+      </div>
+
+
+      <div class="menu-button">
+        <i class="material-icons">search</i>
+      </div>
+
+
     </header>
 
-    <article>
+    <article class="artStart">
       nyheter 2024 + bild
     </article>
 
-    <main> <!-- ska innehålla kort, display flex? --> 
+    <main class="mainStart"> <!-- ska innehålla kort, display flex? -->
       cards på produkter
     </main>
 
@@ -28,7 +53,8 @@
       öppettider, kontakt, om oss osv osv
     </footer>
 
-    <!-- länka JS!!!! -->
+    <script src="js/main.js"></script>
   </div>
 </body>
+
 </html>

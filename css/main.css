@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+
+    background-color: blanchedalmond;
+}
+
+#start_wrapper{
+    display: grid;
+    grid-template-areas:
+    'head'  
+    'art1'
+    'man1'
+    'foot';
+    grid-template-rows: 15vh 40vh 50vh 20vh;
+
+    background-color: pink;
+}
+
+
+/* Element */
+img{
+    height: 80%; /* !! Är detta fult?? */
+    width: 80%;
+
+}
+
+i.material-icons{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+/* Slut element */
+
+/* JS Specific */
+.fadeLayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+/* slut JS Specific */
+
+
+
+/* Alla sidor: */
+.JSNav{
+    height: 100vh;
+    width: 80vw;
+    background: hotpink;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+header{
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: aqua;
+}
+
+.mobileHeader{
+    /* Vad kan man ha här då? */
+}
+
+.logoDiv{ /*MÅSTE FIXA BÄTTRE!!!*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    grid-area: foot;
+
+    background-color: blue;
+}
+
+/* Slut alla sidor */
+
+/* Start: */
+
+.artStart{
+    grid-area: art1;
+
+    background-color: brown;
+}
+
+.mainStart{
+    grid-area: man1;
+
+    background-color: chocolate;
+}
+
+
+/* Slut start */
