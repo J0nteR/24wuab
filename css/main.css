@@ -19,8 +19,9 @@ body{
 
 /* Element */
 img{
-    height: 80%; /* !! Är detta fult?? */
-    width: 80%;
+    height: 100%; /* !! Är detta fult?? */
+    width: 100%;
+    object-fit: cover;
 
 }
 
@@ -112,6 +113,7 @@ footer{
 
 .artStart{
     grid-area: art1;
+    text-align: center;
 
     background-color: brown;
 }
