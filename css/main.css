@@ -107,6 +107,26 @@ footer{
     background-color: blue;
 }
 
+.shoutout{
+    color: rgb(161, 161, 161);
+    align-self: flex-end;
+    padding-right: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-left: 6rem;
+}
+
+a{
+    color: rgb(99, 98, 98);
+}
+
+a:hover{
+    color: rgb(66, 64, 64);
+}
+
 /* Slut alla sidor */
 
 /* Start: */
@@ -114,15 +134,34 @@ footer{
 .artStart{
     grid-area: art1;
     text-align: center;
+    background-image: url(../img/golf-course-christoph-keil-mobile.jpg) ;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    background-color: brown;
 }
+
+
+
 
 .mainStart{
     grid-area: man1;
-
+    
     background-color: chocolate;
 }
 
 
 /* Slut start */
+
+/* vad ska hända vid desktop??: */
+@media screen and (min-width: 768px){ 
+    .artStart{
+        background-image: url(../img/golf-course-christoph-keil-desktop.jpg   );
+    }
+        
+
+
+}
