@@ -19,7 +19,7 @@ body{
 
 /* Element */
 img{
-    height: 100%; /* !! Är detta fult?? */
+    height: 100%; 
     width: 100%;
     object-fit: cover;
 
@@ -46,7 +46,7 @@ i.material-icons{
 .jSNav{
     height: 100vh;
     width: 80vw;
-    background: hotpink;
+    background: rgb(223, 221, 221);
     position: fixed;
     top: 0;
     left: -90vw;
@@ -79,19 +79,14 @@ i.material-icons{
 
 
 /* Alla sidor: */
-
-
 header{
     grid-area: head;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
-
-.logoDiv{ /*MÅSTE FIXA BÄTTRE!!!*/
+.logoDiv{ 
     height: 80%;
     display: flex;
     justify-content: center;
@@ -104,25 +99,23 @@ footer{
     background-color: blue;
 }
 
-.shoutout{
-    color: rgb(161, 161, 161);
-    align-self: flex-end;
-    padding-right: 1rem;
-}
-
-h1{
+h1{ /*Används för "Nyheter 2024*/ 
+    /*BYT FONT??!*/
     font-size: 2rem;
     padding-top: 3rem;
     padding-left: 4rem;
 }
 
-a{
-    height: 100%;
-    color: rgb(99, 98, 98);
+h2{ /*Används i alla cards*/
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /*BYT FONT??!*/
 }
 
-a:hover{
-    color: rgb(66, 64, 64);
+p{
+    font-family: 'Times New Roman', Times, serif; /*BYT FONT??!*/
+}
+
+a{
+    height: 100%; /*för att loggan ska funka*/ 
 }
 
 /* Slut alla sidor */
@@ -139,26 +132,32 @@ a:hover{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
+    
 }
 
-
-
+.shoutout{ /*ta bort?*/
+    color: rgb(161, 161, 161);
+    align-self: flex-end;
+    padding-right: 1rem;
+}
+.shoutout a{
+    height: 100%;
+    color: rgb(99, 98, 98);
+}
+.shoutout a:hover{
+    color: rgb(66, 64, 64);
+}
 
 .mainStart{
     grid-area: man1;
-    
-    /* background-color: chocolate; */
-}
-
-.containerProducts {
     margin: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
+    
 }
 
-.containerProducts a{
+.mainStart a{
     text-decoration: none;
     color: black;
 }
@@ -176,14 +175,13 @@ a:hover{
     height: 80%;
 }
   
-/* On mouse-hover --> skuggar mer */
-.card:hover {
+.card:hover { /* On mouse-hover --> skuggar mer */
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
-
-
 /* Slut start */
+
+
 
 /* vad ska hända vid desktop??: */
 @media screen and (min-width: 768px){ 
