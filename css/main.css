@@ -11,7 +11,7 @@ body{
     'art1'
     'man1'
     'foot';
-    grid-template-rows: 15vh 40vh 50vh 20vh;
+    grid-template-rows: 15vh 40vh 1fr 20vh;
 
     /* background-color: pink; */
 }
@@ -90,9 +90,6 @@ header{
 
 }
 
-.mobileHeader{
-    /* Vad kan man ha här då? */
-}
 
 .logoDiv{ /*MÅSTE FIXA BÄTTRE!!!*/
     height: 80%;
@@ -120,6 +117,7 @@ h1{
 }
 
 a{
+    height: 100%;
     color: rgb(99, 98, 98);
 }
 
@@ -150,7 +148,7 @@ a:hover{
 .mainStart{
     grid-area: man1;
     
-    background-color: chocolate;
+    /* background-color: chocolate; */
 }
 
 .containerProducts {
@@ -158,21 +156,29 @@ a:hover{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem;    
+}
+
+.containerProducts a{
+    text-decoration: none;
+    color: black;
 }
 
 .card {
     background-color: #fff;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    padding: 20px;
     max-width: 300px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.card-img{
+    height: 80%;
+}
   
-  /* On mouse-over --> skuggar mer */
+/* On mouse-hover --> skuggar mer */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
