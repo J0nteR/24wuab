@@ -112,8 +112,9 @@ header{
 
 footer{
     grid-area: foot;
-
-    background-color: blue;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    display: flex;
 }
 
 h1{ /*Används för "Nyheter 2024*/ 
@@ -129,7 +130,7 @@ h2{ /*Används i alla cards*/
 }
 
 p{
-    /* font-family: 'Times New Roman', Times, serif;  */
+    font-weight: 100;
     /*BYT FONT??!*/
 }
 
@@ -142,10 +143,6 @@ a{
 
 a:hover{
     color: rgb(112, 110, 110);
-}
-
-ul{
-
 }
 
 li{
