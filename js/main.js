@@ -2,18 +2,8 @@ document.querySelector(".fadeLayer").addEventListener("click", showMenu)
 
 document.querySelector(".menu-button").addEventListener("click", showMenu)
 
+document.querySelector(".close-button").addEventListener("click", showMenu)
 
-/*
-function fade(){
-    alert('Du tryckte på fade');
-
-}
-*/
-
-function menu(){
-    alert('Du tryckte på menu');
-
-}
 
 function showMenu(){
     console.log("funkar")

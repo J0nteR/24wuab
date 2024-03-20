@@ -1,6 +1,7 @@
 body{
     margin: 0;
-
+    font-family: avenir next, sans-serif;
+    font-weight: 500;
     /* background-color: blanchedalmond; */
 }
 
@@ -40,6 +41,15 @@ i.material-icons{
     display: inline;
 }
 
+.close-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.whiteSpace{
+    width: 72px;
+}
+
 /* Slut element */
 
 /* JS Specific */
@@ -53,6 +63,13 @@ i.material-icons{
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
+    padding-top: 1rem;
+}
+
+.navHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
 }
 
 .fadeLayer{
@@ -107,15 +124,34 @@ h1{ /*Används för "Nyheter 2024*/
 }
 
 h2{ /*Används i alla cards*/
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /*BYT FONT??!*/
+    /* font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;  */
+    /*BYT FONT??!*/
 }
 
 p{
-    font-family: 'Times New Roman', Times, serif; /*BYT FONT??!*/
+    /* font-family: 'Times New Roman', Times, serif;  */
+    /*BYT FONT??!*/
 }
 
 a{
     height: 100%; /*för att loggan ska funka*/ 
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a:hover{
+    color: rgb(112, 110, 110);
+}
+
+ul{
+
+}
+
+li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1.5rem;
 }
 
 /* Slut alla sidor */
