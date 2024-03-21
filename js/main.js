@@ -6,7 +6,6 @@ document.querySelector(".close-button").addEventListener("click", showMenu)
 
 
 function showMenu(){
-    console.log("funkar")
     let menu = document.querySelector("nav.jSNav")
     menu.classList.toggle("show")  
     

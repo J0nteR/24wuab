@@ -13,18 +13,16 @@ body{
     'man1'
     'foot';
     grid-template-rows: 15vh 40vh 1fr auto; 
-    /*MÅSTE BYTA MELLAN MOBIL OCH PC!!!*/ 
 
     /* background-color: pink; */
 }
 
 
-/* Element */
+/* Element: */
 img{
     height: 100%; 
     width: 100%;
     object-fit: cover;
-
 }
 
 i.material-icons{
@@ -47,7 +45,18 @@ i.material-icons{
     display: inline;
 }
 
+.more-buttons{ /*används inte än*/
+    cursor: pointer;
+    display: inline;
+    display: none;
+}
+
 .whiteSpace{
+    width: 72px;
+}
+
+.balanceHeader{
+    display: none;
     width: 72px;
 }
 
@@ -55,14 +64,13 @@ i.material-icons{
 
 /* JS Specific */
 .jSNav{
-    height: 150vh;
-    width: 80vw;
-    background: rgb(236, 236, 236);
+    width: 90vw;
+    background: rgb(245, 245, 245);
     position: fixed;
     top: 0;
+    bottom: 0;
     left: -90vw;
     transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
     padding-top: 1rem;
 }
@@ -102,9 +110,27 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
-.logoDiv{ 
+.desktopNav{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: nav;
+    background-color: rgb(59, 59, 59);
+}
+
+.desktopNav a{
+    height: auto;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+header .logoDiv{ 
     height: 80%;
     display: flex;
     justify-content: center;
@@ -116,21 +142,23 @@ footer{
     color: white;
     background-color: rgb(59, 59, 59);
     display: flex;
-    flex-direction: column; /* ska blir till row i PC!! */
-    justify-content: flex-start; /*SKA BLI SPACE AROUND!*/
-    text-align: center; /*MÅSTE BYTAS!*/
+    flex-direction: column; 
+    justify-content: flex-start; 
+    text-align: center; 
+    padding: 4rem 2rem;
 }
 
 h1{ /*Används för "Nyheter 2024*/ 
-    /*BYT FONT??!*/
+    text-transform: capitalize;
     font-size: 2rem;
     padding-top: 3rem;
     padding-left: 4rem;
+        /*BYT FONT??*/
+
 }
 
 h2{ /*Används i alla cards*/
-    /* font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;  */
-    /*BYT FONT??!*/
+    /*BYT FONT??*/
 }
 
 h3{ /*Rubrik i footer*/
@@ -140,12 +168,15 @@ h3{ /*Rubrik i footer*/
     font-weight: 100;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
-    margin: 2rem 25vw;
+    margin: auto 20vw;
 }
-
 
 h4{ /*LÄnkar i footer*/
     color: white;
+}
+
+h4:hover, .desktopNav a:hover{
+    color: rgb(167, 167, 167);
 }
 
 p{
@@ -177,6 +208,7 @@ nav ul li{
     margin: 1.5rem;
 }
 
+
 /* Slut alla sidor */
 
 /* Start: */
@@ -191,7 +223,6 @@ nav ul li{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    
 }
 
 .shoutout{ /*ta bort?*/
@@ -199,10 +230,12 @@ nav ul li{
     align-self: flex-end;
     padding-right: 1rem;
 }
+
 .shoutout a{
     height: 100%;
     color: rgb(99, 98, 98);
 }
+
 .shoutout a:hover{
     color: rgb(66, 64, 64);
 }
@@ -213,7 +246,6 @@ nav ul li{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
-    
 }
 
 .mainStart a{
@@ -244,10 +276,46 @@ nav ul li{
 
 /* vad ska hända vid desktop??: */
 @media screen and (min-width: 768px){ 
+    #start_wrapper{
+        display: grid;
+        grid-template-areas:
+        'head'
+        'nav'  
+        'art1'
+        'man1'
+        'foot';
+        grid-template-rows: 15vh 4vh 40vh 1fr auto; 
+    
+    }
+    
+    .menu-button{
+        display: none;
+    }
+
+    .balanceHeader{
+        display: block;
+    }
+
+    .jSNav{
+        display: none;
+    }
+
+    .desktopNav{
+        display: flex;
+    }
+
     .artStart{
         background-image: url(../img/golf-course-christoph-keil-desktop.jpg);
     }
-        
 
-
+    footer{
+        flex-direction: row;
+        justify-content: space-around; 
+        text-align: left;
+    }
+    
+    h3{
+        margin: auto;
+    }
+       
 }
