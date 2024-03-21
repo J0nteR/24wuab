@@ -17,6 +17,17 @@ body{
     /* background-color: pink; */
 }
 
+#bollar_wrapper{
+    display: grid;
+    grid-template-areas:
+    'head'  
+    'art2'
+    'filter'
+    'man2'
+    'foot';
+    grid-template-rows: 15vh 40vh 10vh 1fr auto; 
+}
+
 
 /* Element: */
 img{
@@ -272,6 +283,48 @@ nav ul li{
 
 /* Slut start */
 
+/*Bollar:*/
+.artBollar{
+    grid-area: art2;
+    text-align: center;
+    background-image: url() ; /*måste ha bild!!*/
+    background-color: antiquewhite; /*temp*/
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.filter{
+    grid-area: filter;
+
+
+
+    background-color: aqua;
+}
+
+.mainGolfbollar{
+    grid-area: man2;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.mainGolfbollar a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*Slut bollar*/
+
+
+
 
 
 /* vad ska hända vid desktop??: */
@@ -286,6 +339,18 @@ nav ul li{
         'foot';
         grid-template-rows: 15vh 4vh 40vh 1fr auto; 
     
+    }
+
+    #bollar_wrapper{
+        display: grid;
+        grid-template-areas:
+        'head' 
+        'nav' 
+        'art2'
+        'filter'
+        'man2'
+        'foot';
+        grid-template-rows: 15vh 4vh 40vh 10vh 1fr auto; 
     }
     
     .menu-button{
