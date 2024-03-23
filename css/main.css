@@ -39,6 +39,15 @@ body{
 
 }
 
+#contact_wrapper{
+    display: grid;
+    grid-template-areas:
+    'head'
+    'man3'
+    'foot';
+    grid-template-rows: 15vh auto auto; 
+}
+
 
 /* Element: */
 img{
@@ -417,11 +426,59 @@ nav ul li{
 .purchase h2, .purchase i{
     font-size: 1.5;
 }
-
-
-
 /*Slut tripple track*/
 
+/*Contact:*/
+.mainContact{
+    grid-area: man3;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    background-color: rgb(230, 230, 230);
+}
+
+.mainContact h4{
+    color: black;
+    margin-left: 6rem;
+    font-size: 1.1rem;
+}
+
+.mainContact h3{
+    margin: 1rem 2rem;
+    color: black;
+    border-bottom: 1px solid black;
+
+}
+
+.mainContact h2{
+    margin-left: 4rem;
+}
+
+#openHours{
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#contactAlternatives{
+    padding: 1rem;
+    padding-top: 0;
+}
+
+#contactAlternatives h4{
+    margin-left: 1rem;
+}
+
+#contactAlternatives i{
+    margin-left: 3rem;
+}
+
+.contactBlocks{
+    display: flex;
+    align-items: center;
+}
+
+
+/*Slut Contact*/
 
 
 
@@ -462,6 +519,21 @@ nav ul li{
         grid-template-rows: 15vh 4vh auto auto;
         grid-template-columns: 50vw 1fr;
     
+    }
+
+    #contact_wrapper{
+        display: grid;
+        grid-template-areas:
+        'head'
+        'nav'
+        'man3'
+        'foot';
+        grid-template-rows: 15vh 4vh auto auto; 
+    }
+
+    .mainContact{
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .bilder{
