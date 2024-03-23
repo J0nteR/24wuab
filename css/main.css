@@ -14,7 +14,6 @@ body{
     'foot';
     grid-template-rows: 15vh 40vh 1fr auto; 
 
-    /* background-color: pink; */
 }
 
 #bollar_wrapper{
@@ -26,6 +25,18 @@ body{
     'man2'
     'foot';
     grid-template-rows: 15vh 40vh auto 1fr auto; 
+}
+
+#tripple_track_wrapper{
+    display: grid;
+    grid-template-areas:
+    'head'
+    'bild'
+    'art3'
+    'foot';
+    grid-template-rows: 15vh auto auto auto; 
+    grid-template-columns: 1fr;
+
 }
 
 
@@ -168,8 +179,8 @@ h1{ /*Används för "Nyheter 2024*/
 
 }
 
-h2{ /*Används i alla cards*/
-    /*BYT FONT??*/
+.ball_info h2{ 
+    margin: 0;
 }
 
 h3{ /*Rubrik i footer*/
@@ -192,6 +203,8 @@ h4:hover, .desktopNav a:hover{
 
 p{
     font-weight: 100;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
     /*BYT FONT??!*/
 }
 
@@ -351,11 +364,63 @@ nav ul li{
     text-decoration: none;
     color: black;
 }
-
-
-
-
 /*Slut bollar*/
+
+/*Tripple track:*/
+
+.bilder{
+    grid-area: bild;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    background-color: rgb(230, 230, 230);
+}
+
+.bilder img{
+    /* height: auto; */
+}
+
+#trip1{
+    height: 100%;
+    margin: 0.5rem;
+}
+#trip23{
+    display: flex;
+    height: 100%;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+#trip2{
+    margin-right: 0.25rem;
+}
+#trip3{
+    margin-left: 0.25rem;
+}
+
+.ball_info{
+    grid-area: art3;
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem;
+    background-color: rgb(230, 230, 230);
+}
+
+.purchase{
+    cursor: pointer;
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #36b4496e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.purchase h2, .purchase i{
+    font-size: 1.5;
+}
+
+
+
+/*Slut tripple track*/
 
 
 
@@ -385,6 +450,34 @@ nav ul li{
         'man2'
         'foot';
         grid-template-rows: 15vh 4vh 40vh auto 1fr auto; 
+    }
+
+    #tripple_track_wrapper{  /*ska ändras!*/
+        display: grid;
+        grid-template-areas:
+        'head head'
+        'nav nav'
+        'bild art3'
+        'foot foot';
+        grid-template-rows: 15vh 4vh auto auto;
+        grid-template-columns: 50vw 1fr;
+    
+    }
+
+    .bilder{
+        margin: 1rem 0 1rem 1rem;    
+        max-width: 505px;
+        justify-self: end;
+    }
+
+    .bilder img{
+        height: auto;
+    }
+
+    .ball_info{
+        margin: 1rem 1rem 1rem 0;
+        max-width: 505px;
+        justify-self: start;
     }
     
     .menu-button{
