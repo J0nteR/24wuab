@@ -587,6 +587,10 @@ nav ul li{
         margin: 0 1rem;
     }
 
+    #contactAlternatives{
+        padding-top: 1rem;
+        }
+
     footer{
         flex-direction: row;
         justify-content: space-around; 
