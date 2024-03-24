@@ -2,7 +2,6 @@ body{
     margin: 0;
     font-family: avenir next, sans-serif;
     font-weight: 500;
-    /* background-color: blanchedalmond; */
 }
 
 #start_wrapper{
@@ -184,8 +183,6 @@ h1{ /*Används för "Nyheter 2024*/
     font-size: 2rem;
     padding-top: 3rem;
     padding-left: 4rem;
-        /*BYT FONT??*/
-
 }
 
 .ball_info h2{ 
@@ -214,7 +211,6 @@ p{
     font-weight: 100;
     line-height: 1.5rem;
     letter-spacing: 0.05rem;
-    /*BYT FONT??!*/
 }
 
 a{
@@ -258,7 +254,7 @@ nav ul li{
     align-items: flex-start;
 }
 
-.shoutout{ /*ta bort?*/
+.shoutout{
     color: rgb(161, 161, 161);
     align-self: flex-end;
     padding-right: 1rem;
@@ -309,7 +305,7 @@ nav ul li{
 .artBollar{
     grid-area: art2;
     text-align: center;
-    background-image: url(../img/golf-ball-legacy-golf-mobile.jpg) ; /*måste ha bild!!*/
+    background-image: url(../img/golf-ball-legacy-golf-mobile.jpg) ;
     background-size: cover;
     background-position: bottom;
     display: flex;
@@ -418,10 +414,6 @@ nav ul li{
     background-color: #36b4496e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.purchase h2, .purchase i{
-    font-size: 1.5;
-}
 /*Slut tripple track*/
 
 /*Contact:*/
@@ -472,14 +464,12 @@ nav ul li{
     display: flex;
     align-items: center;
 }
-
-
 /*Slut Contact*/
 
 
 
 
-/* vad ska hända vid desktop??: */
+/* (vad ska hända vid desktop?:) */
 @media screen and (min-width: 768px){ 
     #start_wrapper{
         display: grid;
@@ -505,7 +495,7 @@ nav ul li{
         grid-template-rows: 15vh 4vh 40vh auto 1fr auto; 
     }
 
-    #tripple_track_wrapper{  /*ska ändras!*/
+    #tripple_track_wrapper{
         display: grid;
         grid-template-areas:
         'head head'
@@ -589,7 +579,7 @@ nav ul li{
 
     #contactAlternatives{
         padding-top: 1rem;
-        }
+    }
 
     footer{
         flex-direction: row;
